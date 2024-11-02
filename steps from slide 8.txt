@@ -1,0 +1,31 @@
+1. checking for existing ssh key
+
+$ ls -al ~/.ssh
+# Lists the files in your .ssh directory, if they exist
+
+	Check the directory listing to see if you already have a public SSH key. By default, the filenames of supported public keys for GitHub are one of the following.
+	id_rsa.pub
+	id_ecdsa.pub
+	id_ed25519.pub
+
+If you see an existing public and private key pair listed (for example, id_rsa.pub and id_rsa) that you would like to use to connect to GitHub, you can add the key to the ssh-agent.  Either generate a new SSH key or upload an existing key.
+
+
+2. generating new ssh key 
+
+	After you generate the key, you can add the public key to your account on GitHub.com to enable authentication for Git operations over SSH.
+
+ssh-keygen -t rsa -b 4096 -C "taramallynn@gmail.com"
+
+	Please note that if you created SSH keys previously, ssh-keygen may ask you to rewrite another key, in which case we recommend creating a custom-named SSH key. To do so, type the default file location and replace id_ALGORITHM with your custom key name
+
+> Enter file in which to save the key /c/Users/tara/OneDrive/Desktop/git-practicecd/.ssh/id_TARA:[Press enter]
+
+/c/Users/tara/OneDrive/Desktop/git-practicecd/.ssh/id_TARA
+
+3. setting up SSH key to be used w/GitHub acct (jay's ppt)
+
+
+4. create copy of this GitHub repository in my account (jay's ppt)
+
+5. store my resource credentials in a text file in this git repository.

@@ -1,0 +1,26 @@
+Generate new SSH key
+
+It looks like there might be a small typo or formatting issue in your command. Here’s a step-by-step guide to help you generate a custom-named SSH key using Git Bash on Windows:
+
+Open Git Bash: Make sure you have Git Bash open and ready.
+Generate the SSH Key: Use the ssh-keygen command to generate a new SSH key. Replace your_email@example.com with your actual email address.
+
+ssh-keygen -t ed25519 -C "taramallynn@gmail.com"
+
+Specify the File Location: When prompted to “Enter file in which to save the key,” type the desired file path and name. For example:
+/c/Users/tara/OneDrive/Desktop/git-practicecd/.ssh/id_TARA
+
+Press Enter: After entering the file path, press Enter. You will then be prompted to enter a passphrase (optional).
+Here’s a complete example:
+
+$ ssh-keygen -t ed25519 -C "your_email@example.com"
+Generating public/private ed25519 key pair.
+Enter file in which to save the key (/c/Users/tara/.ssh/id_ed25519): /c/Users/tara/OneDrive/Desktop/git-practice/.ssh/id_TARA
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/tara/OneDrive/Desktop/git-practice/.ssh/id_TARA
+Your public key has been saved in /c/Users/tara/OneDrive/Desktop/git-practice/.ssh/id_TARA.pub
+
+If you still encounter the “command not found” error, ensure that Git Bash is correctly installed and that you are using the correct syntax. If the issue persists, you might want to check your Git Bash installation or PATH settings12.
+
+passphrase empty for this one
